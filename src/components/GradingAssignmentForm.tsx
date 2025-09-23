@@ -118,7 +118,7 @@ export default function GradingAssignmentForm() {
                   onChange={(e) => setGraderNames(e.target.value)}
                   rows={6}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                  placeholder="Enter grader names, one per line:&#10;Alice&#10;Bob&#10;Charlie"
+                  placeholder="Enter grader names, one per line"
                 />
               </div>
 
