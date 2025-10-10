@@ -84,9 +84,9 @@ export default function GradingAssignmentForm() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 py-8 px-4">
       <div className="max-w-2xl mx-auto">
-        <div className="bg-white rounded-lg shadow-md p-8">
+        <div className="bg-white/95 backdrop-blur-sm rounded-lg shadow-xl border border-white/10 p-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-8 text-center">
             Grading Assignment Generator
           </h1>
@@ -118,7 +118,7 @@ export default function GradingAssignmentForm() {
                   onChange={(e) => setGraderNames(e.target.value)}
                   rows={6}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                  placeholder="Enter grader names, one per line"
+                  placeholder="Enter grader names, one per line:&#10;Alice&#10;Bob&#10;Charlie"
                 />
               </div>
 
