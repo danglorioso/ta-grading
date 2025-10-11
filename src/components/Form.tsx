@@ -94,7 +94,7 @@ export default function GradingAssignmentForm() {
           {!showResults ? (
             <div className="space-y-6">
               <div>
-                <label htmlFor="submissions" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="submissions" className="block text-sm font-medium text-gray-800 mb-2">
                   Number of Student Submissions
                 </label>
                 <input
@@ -102,14 +102,14 @@ export default function GradingAssignmentForm() {
                   id="submissions"
                   value={numSubmissions}
                   onChange={(e) => setNumSubmissions(e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white text-gray-900"
                   placeholder="Enter number of submissions"
                   min="1"
                 />
               </div>
 
               <div>
-                <label htmlFor="graders" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="graders" className="block text-sm font-medium text-gray-800 mb-2">
                   Grader Names (one per line)
                 </label>
                 <textarea
@@ -117,7 +117,7 @@ export default function GradingAssignmentForm() {
                   value={graderNames}
                   onChange={(e) => setGraderNames(e.target.value)}
                   rows={6}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white text-gray-900"
                   placeholder="Enter grader names, one per line:&#10;Alice&#10;Bob&#10;Charlie"
                 />
               </div>

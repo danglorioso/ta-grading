@@ -1,7 +1,10 @@
-import GradingAssignmentForm from '../components/GradingAssignmentForm';
+import GradingAssignmentForm from '../components/Form';
+// import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <GradingAssignmentForm />
+    <div className="flex flex-col min-h-screen">
+      <GradingAssignmentForm />
+    </div>
   );
 }
