@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TA Grading Assignment Generator
 
-## Getting Started
+A web app tool by **Dan Glorioso** to automatically distributes student submissions among teaching assistants (TAs) for fair and efficient grading assignments.
 
-First, run the development server:
+**Try it now**: [ta.danglorioso.com](https://ta.danglorioso.com)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Automatically calculates equal submission distribution among graders
+- Randomizes both grader order and extra submission allocation
+- Instantly generate and display grading assignments
+- Works all web browser devices
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📋 How It Works
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Enter the total number of student submissions to be graded
+2. List TA names (one per line) who will be doing the grading
+3. Click to automatically calculate fair distribution
+4. View results: See each grader's assigned submission range and count
 
-## Learn More
+### Distribution Algorithm
 
-To learn more about Next.js, take a look at the following resources:
+- Calculates base submissions per grader: `total ÷ graders`
+- Handles remainders by randomly assigning extra submissions
+- Randomizes grader order for fairness
+- Displays clear ranges (e.g., "1-15", "16-30", "31-45")
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💡 How to Use
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Visit [ta.danglorioso.com](https://ta.danglorioso.com)
+2. Enter the total number of student submissions
+3. List your graders (one name per line)
+4. Click "Generate Assignments" for instant, fair distribution
 
-## Deploy on Vercel
+## 👤 Creator
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Dan Glorioso**
+- 🌐 Website: [danglorioso.com](https://danglorioso.com)
+- 🔗 GitHub: [@danglorioso](https://github.com/danglorioso)
+- � Live Tool: [ta.danglorioso.com](https://ta.danglorioso.com)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
